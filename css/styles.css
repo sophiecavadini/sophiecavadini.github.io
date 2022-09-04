@@ -3,7 +3,6 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     background-color: rgb(236, 223, 223);
-
 }
 
 .header {
@@ -14,11 +13,11 @@ body {
 .header__picture {
     display: flex;
     justify-content: center;
-    padding-top: 8rem;
+    padding-top: 9vh;
 }
 
 .header__picture-cv {
-    width: 20%;
+    width: 30vh;
     border-radius: 25rem;
 }
 
@@ -59,10 +58,29 @@ body {
 }
 
 
-/*Taille de 900px à 1024px*/
 
 
-/*Taille de 720px à 899px*/
+/*Taille inférieure à 720px*/
+/*@media screen and (max-width: 720px) {
+
+}*/
 
 
-/*Taille de 480px à 720px*/
+/*Taille inférieure à 375px*/
+@media screen and (max-width: 375px) {
+    .header__picture-cv {
+        width: 20vh;
+    }
+    .header__title {
+        font-size: 2rem;
+    }
+    .header__sub-title {
+        font-size: 0.8rem;
+    }
+    .header__link-icone-image {
+        width: 2rem;
+    }    
+}
+
+
+
