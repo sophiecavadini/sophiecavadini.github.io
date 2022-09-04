@@ -1,0 +1,68 @@
+/*CSS*/
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: rgb(236, 223, 223);
+
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 125, 0, 0.05));background-color: rgba(112, 173, 117, 0.1);
+    margin: 30px;
+}
+
+.header__picture {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.header__picture-cv {
+    width: 20%;
+    border-radius: 25rem;
+}
+
+.header__title {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.header__sub-title {
+    text-align: center;
+    margin: 1rem;
+}
+
+.header__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__link-icone-image {
+    width: 3rem;
+    padding: 1rem;
+    transition: ease 1.2s;
+}
+
+.header__link-icone-image--gmail {
+    width: 4rem;
+}
+
+.header__link-icone-image--cv {
+    width: 3.8rem;
+}
+
+.header__link-icone-image:hover {
+    opacity: 30%;
+}
+
+
+/*Taille de 900px à 1024px*/
+
+
+/*Taille de 720px à 899px*/
+
+
+/*Taille de 480px à 720px*/
