@@ -1,10 +1,20 @@
 /*CSS*/
+
+/*BODY*/
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     background-color: rgb(236, 223, 223);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*HEADER*/
 .header {
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 125, 0, 0.05));background-color: rgba(112, 173, 117, 0.1);
     margin: 30px;
@@ -49,14 +59,134 @@ body {
     width: 4rem;
 }
 
-.header__link-icone-image--cv {
-    width: 3.8rem;
-}
-
 .header__link-icone-image:hover {
     opacity: 30%;
 }
 
+
+/*MAIN*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+
+/*ARTICLE PRESENTATION*/
+
+.article-presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.26), rgba(255, 125, 0, 0.05));background-color: rgba(112, 173, 117, 0.1);
+    padding: 2rem;
+}
+
+.article-presentation__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.article-presentation__about-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-variant-caps: all-small-caps;
+}
+
+.article-presentation__about-description {
+    text-align: left;
+    line-height: 1.4rem;
+    padding: 0.4rem 0 0.4rem 0;
+}
+
+
+.article-presentation__bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 2.5rem 0 2rem 3rem;
+}
+
+.article-presentation__bio-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.4rem 0 0.4rem 0;
+}
+
+.article-presentation__bio-item-title {
+    width: 30%;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    font-size: 1.3rem;
+}
+
+.article-presentation__bio-item-content {
+    width: 70%;
+}
+
+
+
+/*ARTICLE SKILLS*/
+
+.article-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.26), rgba(255, 125, 0, 0.05));background-color: rgba(112, 173, 117, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.article-skills__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+}
+
+.article-skills__icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article-skills__icone {
+    padding: 1rem;
+    width: 10%;
+    transition: ease 1.2s;
+}
+
+.article-skills__icone--html:hover {
+    opacity: 30%; 
+}
+
+.article-skills__icone--css:hover {
+    opacity: 30%;
+}
+
+
+
+/*FOOTER*/
+
+.footer__name { display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.23), rgba(255, 125, 0, 0.05));background-color: rgba(112, 173, 117, 0.1);
+    margin: 30px;
+    font-size: 0.8rem;
+    padding: 20px;
+}
 
 
 
@@ -68,11 +198,9 @@ body {
 
 /*Taille inférieure à 375px*/
 @media screen and (max-width: 375px) {
-    .header__picture-cv {
-        width: 20vh;
-    }
+    
     .header__title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .header__sub-title {
         font-size: 0.8rem;
@@ -80,6 +208,32 @@ body {
     .header__link-icone-image {
         width: 2rem;
     }    
+
+    .article-presentation {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-presentation__about {
+        width: 100%;
+    }
+    .article-presentation__bio {
+        width: 100%;
+        margin: 2.5rem 0 2rem 0;
+    }
+    .article-presentation__bio-item {
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .article-presentation__bio-item-title {
+        font-size: 1.2rem;
+        width: 35%;
+    }
+    .article-presentation__bio-item-content {
+        font-size: 0.9rem;
+        align-items: end;
+        width: 65%;
+    }    
+
 }
 
 
