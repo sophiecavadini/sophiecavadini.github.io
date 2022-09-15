@@ -190,14 +190,11 @@ body {
 
 
 
-/*Taille inférieure à 720px*/
-/*@media screen and (max-width: 720px) {
-
-}*/
+/*Taille inférieure à 1400px, 1000px, 600px, 360px*/
 
 
-/*Taille inférieure à 375px*/
-@media screen and (max-width: 375px) {
+/*Taille inférieure à 600px*/
+@media screen and (max-width: 600px) {
     
     .header__title {
         font-size: 1.8rem;
@@ -215,6 +212,15 @@ body {
     }
     .article-presentation__about {
         width: 100%;
+        
+    }
+    .article-presentation__about-title {
+        text-align: center;
+        
+    }
+    .article-presentation__about-description {
+        text-align: center;
+        
     }
     .article-presentation__bio {
         width: 100%;
