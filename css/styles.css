@@ -137,7 +137,7 @@ body {
 
 /*ARTICLE SKILLS*/
 
-.article-skills{
+.article-hard-skills{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,7 +147,7 @@ body {
     margin-top: 2rem;
 }
 
-.article-skills__title {
+.article-hard-skills__title {
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1rem;
@@ -155,23 +155,23 @@ body {
     text-align: center;
 }
 
-.article-skills__icones{
+.article-hard-skills__icones{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.article-skills__icone {
+.article-hard-skills__icone {
     padding: 1rem;
-    width: 10%;
+    width: 5%;
     transition: ease 1.2s;
 }
 
-.article-skills__icone--html:hover {
+.article-hard-skills__icone--html:hover {
     opacity: 30%; 
 }
 
-.article-skills__icone--css:hover {
+.article-hard-skills__icone--css:hover {
     opacity: 30%;
 }
 
