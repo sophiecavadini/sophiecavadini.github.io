@@ -108,9 +108,9 @@ body {
 .article-presentation__bio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 50%;
-    margin: 2.5rem 0 2rem 3rem;
+    margin: 0 0 2rem 3rem;
 }
 
 .article-presentation__bio-item {
@@ -119,7 +119,7 @@ body {
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    padding: 0.4rem 0 0.4rem 0;
+    padding: 1.4rem 0 0.4rem 0;
 }
 
 .article-presentation__bio-item-title {
@@ -133,9 +133,12 @@ body {
     width: 70%;
 }
 
+strong {
+    font-weight: bold;
+}
 
 
-/*ARTICLE SKILLS*/
+/*ARTICLE HARD SKILLS*/
 
 .article-hard-skills{
     display: flex;
@@ -159,21 +162,61 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .article-hard-skills__icone {
     padding: 1rem;
-    width: 5%;
+    width: 4rem;
     transition: ease 1.2s;
 }
 
-.article-hard-skills__icone--html:hover {
+.article-hard-skills__icone:hover {
     opacity: 30%; 
 }
 
-.article-hard-skills__icone--css:hover {
-    opacity: 30%;
+
+/*ARTICLE SOFT SKILLS*/
+
+.article-soft-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.26), rgba(255, 125, 0, 0.05));background-color: rgba(112, 173, 117, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
 }
+
+.article-soft-skills__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+}
+
+.article-soft-skills__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.article-soft-skills__item {
+    transition: ease 1.2s;
+    border: 1px solid lightgrey;
+    border-radius: 10rem;
+    background: lightgrey;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.article-soft-skills__item:hover {
+    opacity: 50%; 
+}
+
 
 
 
@@ -240,6 +283,15 @@ body {
         width: 65%;
     }    
 
+    .article-hard-skills__icone {
+        width: 2rem;
+    }
+
+    .article-soft-skills__item {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+        margin: 0.2rem;
+    }
 }
 
 
